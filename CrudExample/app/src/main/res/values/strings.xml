@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CrudExample</string>
+    <string name="hint">Nombre del Departamento</string>
+    <string name="textButton">Agregar</string>
+    <string name="hintId">ID</string>
+    <string name="buttonDelete">Borrar</string>
+    <string name="buttonUpdate">Actualizar</string>
+    <string name="buttonSelct">Ver Todos</string>
+    <string name="back">Regresar</string>
+</resources>

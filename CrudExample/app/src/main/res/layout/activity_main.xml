@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.user.crudexample.MainActivity">
+
+    <EditText
+        android:id="@+id/idDepartment"
+        android:layout_width="200dp"
+        android:layout_height="39dp"
+        android:layout_alignLeft="@+id/nameDepartment"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/nameDepartment"
+        android:hint="@string/hintId"
+        android:textColor="@color/textColor" />
+
+    <EditText
+        android:id="@+id/nameDepartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/idDepartment"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/hint"
+        android:textColor="@color/textColor" />
+
+    <Button
+        android:id="@+id/buttonCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameDepartment"
+        android:layout_alignStart="@+id/nameDepartment"
+        android:layout_below="@+id/idDepartment"
+        android:layout_marginTop="73dp"
+        android:text="@string/textButton" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/buttonCreate"
+        android:layout_alignBottom="@+id/buttonCreate"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/buttonCreate"
+        android:layout_toRightOf="@+id/buttonCreate"
+        android:text="@string/buttonDelete" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonDelete"
+        android:layout_alignBottom="@+id/buttonDelete"
+        android:layout_toEndOf="@+id/nameDepartment"
+        android:layout_toRightOf="@+id/nameDepartment"
+        android:text="@string/buttonUpdate"
+        android:id="@+id/buttonUpdate" />
+
+    <Button
+        android:id="@+id/buttonSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttonUpdate"
+        android:layout_alignLeft="@+id/buttonCreate"
+        android:layout_alignRight="@+id/buttonUpdate"
+        android:layout_alignStart="@+id/buttonCreate"
+        android:layout_below="@+id/buttonCreate"
+        android:layout_marginTop="20dp"
+        android:text="@string/buttonSelct" />
+
+
+
+</RelativeLayout>
